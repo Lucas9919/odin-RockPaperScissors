@@ -1,6 +1,14 @@
 let humanScore = 0;
 let computerScore = 0;
-
+document
+  .getElementById('rock')
+  .addEventListener('click', () => playRound('rock'));
+document
+  .getElementById('paper')
+  .addEventListener('click', () => playRound('paper'));
+document
+  .getElementById('scissors')
+  .addEventListener('click', () => playRound('scissors'));
 // randomly return one of the following string values "rock, paper, scissors"
 function getComputerChoice() {
   const choices = ['rock', 'paper', 'scissors'];
